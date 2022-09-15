@@ -69,44 +69,44 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 1150px;
+  width: 1700px;
 }
 
 /* container-left */
 
 .container-left {
-  width: 575px;
+  width: 850px;
   min-height: 100vh;
 }
 
 .logo {
-  padding: 40px 0 40px 0;
+  padding: 50px 0 80px 0;
   width: 30%;
 }
 
 .illustration {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
 /* container-right */
 
 .container-right {
   color: white;
-  width: 575px;
+  width: 850px;
   min-height: 100vh;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 33px;
-  margin: 170px 70px 0 60px;
+  font-size: 40px;
+  margin: 300px 300px 0 100px;
 }
 
 p {
   font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  margin: 20px 70px 20px 60px;
+  font-size: 20px;
+  margin: 20px 100px 30px 100px;
   line-height: 1.6;
 }
 
@@ -117,8 +117,8 @@ button {
   border: none;
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
-  padding: 12px 60px;
-  margin-left: 60px;
+  padding: 15px 70px;
+  margin-left: 100px;
 }
 
 button:hover {
@@ -131,7 +131,7 @@ button:hover {
   flex-direction: row;
   justify-content:flex-end;
   align-items:flex-end;
-  padding-top: 100px;
+  padding-top: 190px;
 }
 
 .fa-square-twitter {
@@ -139,7 +139,7 @@ button:hover {
 }
 
 .fa-square-instagram {
-  margin-right: 70px;
+  margin-right: 100px;
 }
 
 .fa-square-twitter:hover {
@@ -165,7 +165,7 @@ button:hover {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 1200px)  {
 
   body {
     background-image: url("./images/bg-mobile.svg");
@@ -183,7 +183,7 @@ button:hover {
 
   .container-left {
     width: auto;
-    min-height: 100vh;
+    min-height: 50vh;
   }
 
   .logo {
@@ -194,7 +194,7 @@ button:hover {
   .container-right {
     color: white;
     width: auto;
-    min-height: 100vh;
+    min-height: 50vh;
   }
 
   h1 {
@@ -224,6 +224,20 @@ button:hover {
 
   .fa-square-instagram {
     margin-right: 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .container-left {
+    width: auto;
+    min-height: 50vh;
+  }
+
+  .container-right {
+    width: auto;
+    min-height: 50vh;
   }
 
 }
