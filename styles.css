@@ -1,0 +1,229 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Violet: hsl(257, 40%, 49%)
+- Soft Magenta: hsl(300, 69%, 71%)
+
+## Typography
+
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 600
+
+### Body
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
+
+<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 1150px;
+}
+
+/* container-left */
+
+.container-left {
+  width: 575px;
+  min-height: 100vh;
+}
+
+.logo {
+  padding: 40px 0 40px 0;
+  width: 30%;
+}
+
+.illustration {
+  width: 100%;
+  padding-top: 20px;
+}
+
+/* container-right */
+
+.container-right {
+  color: white;
+  width: 575px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 33px;
+  margin: 170px 70px 0 60px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 20px 70px 20px 60px;
+  line-height: 1.6;
+}
+
+button {
+  background: white;
+  color: hsl(257, 40%, 49%);
+  border-radius: 30px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  padding: 12px 60px;
+  margin-left: 60px;
+}
+
+button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+
+.fontawesome {
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  align-items:flex-end;
+  padding-top: 100px;
+}
+
+.fa-square-twitter {
+  margin: 0 20px;
+}
+
+.fa-square-instagram {
+  margin-right: 70px;
+}
+
+.fa-square-twitter:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.fa-square-instagram:hover {
+  color: hsl(300, 69%, 71%);
+}
+.fa-square-facebook:hover {
+    color: hsl(300, 69%, 71%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 5px 0;
+  color: white;
+}
+
+.attribution a {
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px)  {
+
+  body {
+    background-image: url("./images/bg-mobile.svg");
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-height: 100vh;
+    margin: 40px;
+  }
+
+  .container-left {
+    width: auto;
+    min-height: 100vh;
+  }
+
+  .logo {
+    padding: 10px 0 40px 0;
+    width: 40%;
+  }
+
+  .container-right {
+    color: white;
+    width: auto;
+    min-height: 100vh;
+  }
+
+  h1 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 20px;
+    margin: 20px 0 40px 0;
+    text-align: center;
+  }
+
+  button {
+    padding: 12px 100px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .fontawesome {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+
+  .fa-square-instagram {
+    margin-right: 0;
+  }
+
+}
